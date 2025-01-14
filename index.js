@@ -70,6 +70,7 @@ function clearColors() {
   const items = document.querySelector("#list-items");
   items.innerHTML = "";
   localStorage.removeItem("colorsList");
+  console.log("Local storage dumped.");
 }
 
 document.querySelector("#clearColors").addEventListener("click", clearColors);
